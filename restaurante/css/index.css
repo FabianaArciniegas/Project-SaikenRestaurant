@@ -1,0 +1,142 @@
+
+body {
+    overflow-x: hidden;
+}
+
+/*-----------Menu Contacto-------------*/
+
+.contacto-menu {
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.contacto-menu h3  {
+    margin-left: 13rem;
+}
+
+.contact {
+    margin-left: 25rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icon-contact {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+    margin-left: 15rem;
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+/*-----------Menu Navbar-------------*/
+
+.navegacion {
+    background-color: #1a1815;
+    width: 100%;
+    min-height: 7rem;
+    max-height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.menuNavegar {
+    width: 100%;
+}
+
+.menuNavegar ul {
+    display: flex;
+    gap: 50px;
+}
+
+.menuNavegar ul li {
+    list-style: none;
+}
+
+.menuNavegar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Gotham SSm A";
+    font-size: 17px;
+}
+
+.logo img {
+    width: 150px;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+.menu-dos {
+    display: flex;
+    margin-right: 5rem;
+}
+.fa-solid {
+    font-size: 50px;
+    color: aliceblue;
+}
+.login {
+    height: 3rem;
+    width: 10rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*-------------------HERO CARRUSEL----------------------*/
+
+.hero {
+    background-image: url(/Imagenes/Carrusel-restaurante.jpg);
+    height: 37rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*-------------------Comidas Populares and Grid----------------------*/
+
+.popularfood {
+    padding-top: 50px;
+    width: 60%;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.menuGrid {
+    display: grid;
+    width: 80%;
+    inset: 0;
+    gap: 10px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gridMenu img {
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+
+.gridMenu {
+    border-radius: 10px;
+    max-height: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid  #555837;
+}
