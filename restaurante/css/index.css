@@ -1,8 +1,3 @@
-
-body {
-   
-}
-
 /*-----------Menu Contacto-------------*/
 
 .contacto-menu {
@@ -16,6 +11,7 @@ body {
 .contacto-menu h3  {
     margin-left: 13rem;
     cursor: default;
+    color: #1A1815;
 }
 
 .contact {
@@ -118,6 +114,7 @@ body {
 }
 
 .hero img {
+    height: 520px;
     width: 100%;
     display: block;
     object-fit: cover;
@@ -136,13 +133,31 @@ body {
 
 .popularfood {
     padding-top: 50px;
-    width: 60%;
+    width: 70%;
     inset: 0;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+.popularfood h2 {
+    color: #1A1815;
+    font-family: 'Gotham SSm A';
+}
+
+.popularfood li {
+    list-style: none;
+    background-color: #1a1815;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.popularfood a {
+    text-decoration: none;
+    font-family: "Gotham SSm A";
+    color: #fff;
 }
 
 .menuGrid {
@@ -161,6 +176,7 @@ body {
     margin-top: 2%;
     margin-bottom: 5px;
     margin-left: 4%;
+    object-fit: cover;
     
 }
 
@@ -281,6 +297,7 @@ body {
 }
 
 .oferta-menu img {
+    cursor: pointer;
     width: 300px;
     height: 300px;
     border-radius: 50%;
