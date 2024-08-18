@@ -1,0 +1,167 @@
+
+
+
+/*---------------FOOTER.....................*/
+
+/* Estilo general para pantallas grandes */
+footer {
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 15% 35% 25% 25%;
+    margin-bottom: 50px; /
+}
+
+footer img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.cajauno, .cajados, .cajatres {
+    width: 100%;
+}
+
+.cajauno h2, .cajados h2, .cajatres h2 {
+    color: #1A1815;
+    font-family: "Gotham SSm A";
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.cajauno ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cajauno li {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.cajauno a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1A1815;
+}
+
+.cajados h4 {
+    font-family: "Gotham SSm A";
+    color: #1A1815;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.contactanos {
+    display: flex;
+    align-items: center;
+}
+
+.contactanos i{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 22px;
+    padding-left: 15px;
+}
+
+.cajatres h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #1A1815;
+    font-family: "Gotham SSm A";
+    margin-top: 3rem;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-footer a {
+    text-decoration: none;
+    color: #1A1815;
+}
+
+.icon-footer i {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+/* Media query para tablets (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: left;
+    }
+
+    .cajauno ul {
+        grid-template-columns: 1fr;
+    }
+
+    .cajauno li{
+        margin-bottom: 10px;
+    }
+
+    .icon-footer {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+/* Media query para móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        margin-left: 1.5rem;
+        gap: 0.5rem;
+    }
+
+    footer img {
+        width: 100px;
+        height: 100px;
+        justify-self: left;
+    }
+
+    .cajauno ul {
+        grid-template-columns: 1fr;
+    }
+
+    .cajauno li{
+        margin-bottom: 0;
+    }
+
+    .cajados h4{
+        margin-bottom: 0;
+    }
+    .contactanos{
+        text-align: center;
+    }
+
+    .contactanos i{
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+
+    .icon-footer {
+        justify-content: left;
+        margin: 0;
+    }
+
+    .icon-footer i {
+        font-size: 30px;
+    }
+
+    .cajatres p {
+        text-align: left;
+        font-size: 1rem;
+    }
+}

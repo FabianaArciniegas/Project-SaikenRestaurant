@@ -1,0 +1,80 @@
+/*-----------TIPO PLATILLOS-----------------------*/
+
+/* Estilo general para pantallas grandes */
+.platillos-menu {
+    margin-top: 5rem;
+    background-color: #1A1815;
+    width: 100%;
+    height: auto;
+}
+
+.platillos h3 {
+    font-family: "Gotham SSm A";
+    width: 100%;
+    color: #FBFBE3;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.logo-platillos {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo-platillos div {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.logo-platillos img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.logo-platillos p {
+    text-align: center;
+    font-family: "Gotham SSm A";
+    text-align: center;
+    color: #FBFBE3;
+    font-size: 1rem;
+}
+
+/* Media query para tablets (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .platillos h3 {
+        font-size: 1.75rem;
+    }
+
+    .logo-platillos {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 0 2rem;
+    }
+}
+
+/* Media query para móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .logo-platillos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-platillos div {
+        margin: 0;
+    }
+
+    .platillos h3 {
+        font-size: 1.5rem;
+    }
+
+    .logo-platillos div {
+        width: 80%;
+    }
+}

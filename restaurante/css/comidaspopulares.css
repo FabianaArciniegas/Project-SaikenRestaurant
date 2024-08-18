@@ -1,0 +1,175 @@
+/*-------------------COMIDAS POPULARES----------------------*/
+
+/* Estilo general para pantallas grandes */
+.popularfood {
+    width: 1260px;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+    margin-bottom: 2rem;
+}
+
+.popularfood h2 {
+    margin-left: 0;
+    color: #1A1815;
+    font-family: 'Gotham SSm A';
+}
+
+.popularfood li {
+    cursor: pointer;
+    list-style: none;
+    background-color: #1a1815;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.popularfood a {
+    text-decoration: none;
+    font-family: "Gotham SSm A";
+    color: #fff;
+}
+
+.menuGrid {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.gridMenu {
+    border-radius: 8px;
+    height: 350px;
+    width: 300px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto 45.16px;
+    align-items: center;
+    outline: 3px solid  #555837;
+    cursor: pointer;
+}
+
+.gridMenuImg{
+    display: flex;
+    justify-content: center;
+}
+
+.gridMenu img {
+    border-radius: 8px;
+    width: 277.78px;
+    height: 282.26px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    height: 45.16px;
+    width: 300px;
+    background-color: #555837;
+}
+
+.caja li {
+    list-style: none;
+    text-align: center;
+}
+
+.caja a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Gotham SSm A";
+}
+
+/* Media query para tablets (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .popularfood {
+        width: 100%;
+    }
+
+    .menuGrid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+    }
+
+    .gridMenu {
+        height: 220px;
+        width: 170px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .gridMenu img {
+        width: 157.78px;
+        height: 162.26px;
+    }
+
+    .caja {
+        height: 45.16px;
+        width: 170px;
+    }
+
+    .caja li {
+        font-size: 15px;
+    }
+}
+
+ /* Media query para móviles (pantallas pequeñas) */
+ @media (max-width: 768px) {
+    .popularfood {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .popularfood li {
+        width: 250px;
+        cursor: pointer;
+        list-style: none;
+        background-color: #1a1815;
+        padding: 10px 0px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+   .menuGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+   }
+
+   .gridMenu {
+        inset: 0;
+        margin: auto;
+        width: 90%;
+        height: 320px;
+        overflow: hidden;
+   }
+
+   .gridMenuImg {
+        background-color: #1A1815;
+        height: auto;
+        width: 680px;
+        object-fit: cover;
+   }
+
+   .gridMenu img {
+        width: 100%;
+        object-fit: cover;
+   }
+
+   .caja {
+        width: 100%;
+        height: 100%;
+   }
+
+}

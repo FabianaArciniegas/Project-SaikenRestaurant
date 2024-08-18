@@ -1,0 +1,112 @@
+/*-----------MENU CONTACTO-------------*/
+
+/* Estilo general para pantallas grandes */
+.contacto-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 0 2rem;
+}
+
+.contacto-menu h3  {
+    color: #1A1815;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-items h4{
+    font-weight: 400;
+}
+
+.icophone{
+    font-size: 25px;
+    color: #1A1815;
+    margin-left: 30px;
+}
+
+.icoLocation{
+    font-size: 25px;
+    color: #1A1815;
+}
+
+.icon-contact {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px
+}
+
+.icon-contact a {
+    color: #1A1815;
+}
+
+.fa-brands {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media query para tablets (pantallas medianas) */
+@media (min-width: 769px ) and (max-width: 1024px) {
+    .contacto-menu {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .contacto-menu h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        margin: 0;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact h4{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .icophone, .icoLocation{
+        font-size: 15px;
+        color: #1A1815;
+    }
+
+    .icon-contact {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .fa-brands {
+        margin: 0 20px;
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+/* Media query para móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .contacto-menu {
+        display: none; /* Oculta el elemento en pantallas pequeñas */
+    }
+}
