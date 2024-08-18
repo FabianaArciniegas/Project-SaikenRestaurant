@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saiken</title>
+    <link
+      rel="shortcut icon"
+      href="./Imagenes/logowhite.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="contacto-menu">
+      <h3>Tradición y gastronomía en un solo lugar</h3>
+
+      <div class="contact">
+        <div class="contact-items">
+          <i class="fa-solid fa-location-dot icoLocation"></i>
+          <h4>Dirección: Carrera 0 # 10 - 20</h4>
+        </div>
+        <div class="contact-items">
+          <i class="fa-solid fa-phone icophone"></i>
+          <h4>Contacto: 604 - 1234567</h4>
+        </div>
+      </div>
+
+      <div class="icon-contact">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </header>
+
+    <header class="navegacion">
+      <div class="logo">
+        <a href="#"><img src="./Imagenes/logowhite.png" alt="logo" /></a>
+      </div>
+
+      <nav class="nav-colapsable">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars icoBars"></i>
+        </button>
+
+        <div class="menuNavegar">
+          <ul class="menu-items">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Comidas Populares</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Menú</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping cartShopping"></i></a></li>
+            <li><a href="#"><button class="login"><i class="fa-solid fa-circle-user iconUser"></i>Iniciar Sesión</button></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <ul class="slides">
+        <li><img src="./Imagenes/Carrusel-restaurante.jpg" alt="" /></li>
+        <li><img src="./Imagenes/Carrusel-restaurante4.jpg" alt="" /></li>
+        <li><img src="./Imagenes/Carrusel-restaurante5.jpg" alt="" /></li>
+      </ul>
+      <div class="navigationSlides">
+        <span class="nav-dot" onclick="currentSlide(1)"></span>
+        <span class="nav-dot" onclick="currentSlide(2)"></span>
+        <span class="nav-dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <section>
+      <div class="popularfood">
+        <h2>Comidas Populares</h2>
+        <li><a href="#">Ver todo el Menú</a></li>
+      </div>
+
+      <div class="menuGrid">
+        <div class="gridMenu">
+            <div class="gridMenuImg">
+              <img src="./Imagenes/Plato-res.jpg" alt="" />
+            </div>
+            <div class="caja">
+              <li><a href="#">Carne a la parrilla</a></li>
+            </div>
+          </a>
+        </div>
+
+        <div class="gridMenu">
+            <div class="gridMenuImg">
+              <img src="./Imagenes/Plato-postres.jpg" alt="" />
+            </div>
+            <div class="caja">
+              <li><a href="#">Cheesecake de Chocolate</a></li>
+            </div>
+        </div>
+
+        <div class="gridMenu">
+            <div class="gridMenuImg">
+              <img src="./Imagenes/Plato-pastas.jpg" alt="" />
+            </div>
+            <div class="caja">
+              <li><a href="#">Pastas a la Boloñesa</a></li>
+            </div>
+        </div>
+
+        <div class="gridMenu">
+            <div class="gridMenuImg">
+              <img src="./Imagenes/Plato-pescado.jpg" alt="" />
+            </div>
+            <div class="caja">
+              <li><a href="#">Salmón</a></li>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="platillos-menu">
+      <div class="platillos">
+        <h3>¿De qué estas antojado?</h3>
+        <div class="logo-platillos">
+          <div>
+            <img src="./Imagenes/Imagen-res.png" alt="" />
+            <p>Res</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-cerdo.jpg" alt="" />
+            <p>Cerdo</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-pollo.png" alt="" />
+            <p>Pollo</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-pescado.jpg" alt="" />
+            <p>Pescado</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-pastas.jpg" alt="" />
+            <p>Pastas</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-hamburguesa.jpg" alt="" />
+            <p>Comidas Rápidas</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-postre.jpg" alt="" />
+            <p>Postres</p>
+          </div>
+          <div>
+            <img src="./Imagenes/Imagen-bebidas.jpg" alt="" />
+            <p>Bebidas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ofertas">
+      <div class="banner">
+        <img src="./Imagenes/Ofertas-banner.jpg" alt="" />
+        <img src="./Imagenes/Ofertas-banner.jpg" alt="" />
+      </div>
+      <div class="oferta-menu">
+        <div class="oferta-img">
+          <img src="./Imagenes/Ofertas-personalizada2.jfif" alt="" />
+          <img src="./Imagenes/Ofertas-personalizada3.jfif" alt="" />
+          <img src="./Imagenes/Ofertas-personalizada4.jpg" alt="" />
+        </div>
+        <div class="contenedor">
+          <svg
+            viewBox="0 0 1440 215"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="ola"
+          >
+            <path
+              d="M1440 215L0 213.5V0L105.537 59L153.553 0H456.659L519.68 49.5L562.195 0H865.3L934.825 49.5L971.837 0H1271.94L1361.47 59L1440 0V215Z"
+              fill="#D5AE77"
+              fill-opacity="0.8"
+            />
+          </svg>
+        </div>
+        <div class="porcentajeOferta">
+          <img src="./Imagenes/descuentto-25.png" alt="" />
+          <img src="./Imagenes/descuentto-50.png" alt="" />
+          <img src="./Imagenes/descuentto-25.png" alt="" />
+        </div>
+        <div class="superOferta">
+          <img src="./Imagenes/super-ofertas.jpg" alt="" />
+          <img src="./Imagenes/super-ofertas.jpg" alt="" />
+          <img src="./Imagenes/super-ofertas.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="./Imagenes/Logo_Footer-Transparencia.png" alt="" />
+      <div class="cajauno">
+        <h2>Saiken</h2>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Comidas Populares</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="cajados">
+        <h2>Contáctanos</h2>
+        <div class="contactanos">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Carrera 0 # 10 - 20</h4>
+        </div>
+        <div class="contactanos">
+          <i class="fa-solid fa-phone"></i>
+          <h4>604 - 1234567</h4>
+        </div>
+        <div class="contactanos">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>informacion@email.com</h4>
+        </div>
+      </div>
+      <div class="cajatres">
+        <h2>Síguenos</h2>
+        <div class="icon-footer">
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <h3>
+          Tradición y gastronomía <br />
+          en un solo lugar.
+        </h3>
+      </div>
+    </footer>
+    <section>
+      <div class="derechos">
+        <p>© 2024 Todos los derechos reservados por Saiken</p>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
